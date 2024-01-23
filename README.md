@@ -2,14 +2,14 @@
 
 #### This script uses an api key stored in the .env file that is correlated to etherscan to access data on account addresses.
 
-This code is written in python and is using the pip package manager as per most python use cases. To install the necessary packages use `pip install -r requirements.txt` after pulling the project form github.
+This code is written in python and is using the pip package manager as per most python use cases. To install the necessary packages use `pip install -r requirements.txt` after pulling the project from GitHub.
 
-This code will need and etherscan api key which can be found here https://etherscan.io/
+This code will need an etherscan api key which can be found here https://etherscan.io/ though will need a free account.
 
 This script takes in one augment which is the address hash.
 `python main.py <crypto_address>` where <crypto_address> is the supplied account address.
 
-This code produces a csv correlated to the account address two csvs are provided for demonstration of the output.
+This code produces a csv correlated to the account address. Two csvs are provided for demonstration of the output.
 
 ### What I have included in CSV Output
 
@@ -21,7 +21,8 @@ This code produces a csv correlated to the account address two csvs are provided
 6. erc_721_transfer_events
 7. erc_1155_transfer_events
 
-How these are represented is that the crypt address is the hash provided, balance is the balance in ether, and
+### How these are represented
+The crypto address is the hash provided in augments to the script, balance is the balance in ether, and
 normal transactions,internal_transactions, erc_20_transfer_events, erc_721_transfer_events, erc_1155_transfer_events are the number of transactions and transfer events.
 
 ### What I wanted to do if I had more time
